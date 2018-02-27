@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="linearLayouts_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="imageTeamsStyles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+
+    <style name="goalsTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--item name="android:background">@color/background_text_color</item-->
+        <item name="android:textSize">100sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/score_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="teamsNameStyle" parent="goalsTextStyle">
+        <item name="android:textSize">50sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <!--item name="android:background">@color/background_text_color</item-->
+        <!--item name="android:textColor">@color/text_color</item-->
+    </style>
+
+    <style name="foulsTextStyle" parent="goalsTextStyle">
+        <!--item name="android:background">@color/background_text_color</item-->
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/fouls_color</item>
+    </style>
+
+    <style name="textLabelsStyle" parent="goalsTextStyle">
+        <item name="android:background">@color/background_label_color</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/label_color</item>
+    </style>
+
+    <style name="buttonsStyle" parent="@style/goalsTextStyle">
+        <item name="android:background">@color/background_button_color</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+</resources>

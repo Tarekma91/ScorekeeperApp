@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tarek.scorekeeperapp.MainActivity">
+
+
+        <!-- background image  -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            android:src="@drawable/playground" />
+
+
+        <!-- 1st team container layout -->
+        <LinearLayout
+            style="@style/linearLayouts_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/id_view">
+
+            <!-- 1st team name -->
+            <TextView
+                android:id="@+id/idNameTeamA"
+                style="@style/teamsNameStyle"
+                android:text="@string/team_one" />
+
+            <!-- 1st team logo -->
+            <ImageView
+                style="@style/imageTeamsStyles"
+                android:src="@mipmap/ic_launcher" />
+
+            <!--  right have of GOALS label -->
+            <TextView
+                style="@style/textLabelsStyle"
+                android:layout_gravity="right"
+                android:text="go" />
+
+            <!-- 1st team score -->
+            <TextView
+                android:id="@+id/idScoreTeamA"
+                style="@style/goalsTextStyle"
+                android:text="@string/initial_score" />
+
+            <!-- left half of FOULS label -->
+
+            <TextView
+                style="@style/textLabelsStyle"
+                android:layout_gravity="right"
+                android:text="fo" />
+
+            <!-- 1st team fouls -->
+            <TextView
+                android:id="@+id/idFoulsTeamA"
+                style="@style/foulsTextStyle"
+                android:text="@string/initial_score" />
+
+            <!-- add goal to 1st team  -->
+            <Button
+                android:id="@+id/idAddGoalTeamA"
+                style="@style/buttonsStyle"
+                android:text="@string/add_goal" />
+
+
+            <!-- add foul to 1st team  -->
+            <Button
+                android:id="@+id/idAddFoulTeamA"
+                style="@style/buttonsStyle"
+                android:text="@string/add_foul" />
+
+
+        </LinearLayout>
+
+        <!-- blank view to divide the Relative layout for 2 equal linear layouts   -->
+        <View
+            android:id="@+id/id_view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"></View>
+
+        <!-- 2nd team container layout -->
+        <LinearLayout
+            style="@style/linearLayouts_style"
+            android:layout_alignLeft="@id/id_view"
+            android:layout_alignParentRight="true">
+
+            <!-- 2nd team name  -->
+            <TextView
+                android:id="@+id/idNameTeamB"
+                style="@style/teamsNameStyle"
+                android:text="@string/team_two" />
+
+            <!-- 2nd team logo  -->
+            <ImageView
+                style="@style/imageTeamsStyles"
+                android:src="@mipmap/ic_launcher" />
+
+            <!--  right have of GOALS label -->
+            <TextView
+                style="@style/textLabelsStyle"
+                android:layout_gravity="left"
+                android:text="als" />
+
+            <!-- 2nd team score  -->
+            <TextView
+                android:id="@+id/idScoreTeamB"
+                style="@style/goalsTextStyle"
+                android:text="@string/initial_score" />
+
+            <!-- right half of FOULS label -->
+            <TextView
+                style="@style/textLabelsStyle"
+                android:layout_gravity="left"
+                android:text="uls" />
+
+            <!-- 2nd team fouls  -->
+            <TextView
+                android:id="@+id/idFoulsTeamB"
+                style="@style/foulsTextStyle"
+                android:text="@string/initial_score" />
+
+            <!-- add goal to 2nd team  -->
+            <Button
+                android:id="@+id/idAddGoalTeamB"
+                style="@style/buttonsStyle"
+                android:text="@string/add_goal" />
+
+            <!-- add foul to 2nd team  -->
+            <Button
+                android:id="@+id/idAddFoulTeamB"
+                style="@style/buttonsStyle"
+                android:text="@string/add_foul" />
+
+
+        </LinearLayout>
+
+
+        <!-- reset button  -->
+        <Button
+            android:id="@+id/idResetButton"
+            style="@style/buttonsStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/reset" />
+
+</RelativeLayout>

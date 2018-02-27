@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="score_color">#810408</color>
+    <color name="fouls_color">#c7040a</color>
+    <color name="label_color">#02066c</color>
+    <color name="background_text_color">#018001</color>
+    <color name="background_label_color">#87cf87</color>
+    <color name="button_text_color">#610122</color>
+    <color name="background_button_color">#0e500e</color>
+
+
+
+</resources>
